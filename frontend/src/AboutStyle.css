@@ -1,0 +1,636 @@
+/* About Page Styles */
+.about-page {
+  overflow-x: hidden;
+}
+
+/* About Hero Section */
+.about-hero {
+  background: linear-gradient(135deg, #6c63ff 0%, #4a44b5 100%);
+  color: white;
+  padding: 120px 0 80px;
+  text-align: center;
+}
+
+.about-hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.about-hero-content p {
+  font-size: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* Mission Section */
+.mission-section {
+  padding: 100px 0;
+  background-color: white;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.mission-content h2 {
+  font-size: 36px;
+  margin-bottom: 25px;
+  color: var(--dark);
+}
+
+.mission-content p {
+  color: var(--gray);
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.mission-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.mission-image .image-placeholder {
+  height: 400px;
+  background: linear-gradient(135deg, #f5f7ff 0%, #e6e9ff 100%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mission-image .image-placeholder i {
+  font-size: 100px;
+  color: var(--primary);
+  opacity: 0.7;
+}
+
+/* Values Section */
+.values-section {
+  padding: 100px 0;
+  background-color: var(--light);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.value-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: var(--transition);
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.value-icon {
+  width: 80px;
+  height: 80px;
+  background: rgba(108, 99, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+}
+
+.value-icon i {
+  font-size: 35px;
+  color: var(--primary);
+}
+
+.value-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: var(--dark);
+}
+
+.value-card p {
+  color: var(--gray);
+  line-height: 1.6;
+}
+
+
+
+
+/* Founder Section */
+.founder-card-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.founder-card {
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+  max-width: 400px;
+  width: 100%;
+  border: 3px solid #6c63ff;
+  position: relative;
+}
+
+.founder-card::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(135deg, #6c63ff, #4a44b5);
+  border-radius: 25px;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.founder-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.founder-avatar {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #6c63ff 0%, #4a44b5 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  border: 4px solid white;
+  box-shadow: 0 8px 20px rgba(108, 99, 255, 0.3);
+}
+
+.founder-card h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: var(--dark);
+  font-weight: 700;
+}
+
+.founder-role {
+  color: #6c63ff;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.founder-card p {
+  color: var(--gray);
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+/* Responsive adjustments for founder card */
+@media (max-width: 768px) {
+  .founder-card {
+    padding: 2.5rem 2rem;
+    max-width: 350px;
+  }
+  
+  .founder-avatar {
+    width: 100px;
+    height: 100px;
+    font-size: 28px;
+  }
+  
+  .founder-card h3 {
+    font-size: 24px;
+  }
+  
+  .founder-role {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .founder-card {
+    padding: 2rem 1.5rem;
+    max-width: 300px;
+  }
+  
+  .founder-avatar {
+    width: 90px;
+    height: 90px;
+    font-size: 24px;
+  }
+  
+  .founder-card h3 {
+    font-size: 22px;
+  }
+}
+
+/* Team Section */
+.team-section {
+  padding: 100px 0;
+  background-color: white;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.team-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: var(--transition);
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.team-avatar {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.team-card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: var(--dark);
+}
+
+.team-role {
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.team-card p {
+  color: var(--gray);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.team-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.team-social a {
+  width: 35px;
+  height: 35px;
+  background: var(--light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.team-social a:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Story Section */
+.story-section {
+  padding: 100px 0;
+  background-color: var(--light);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.story-image .image-placeholder {
+  height: 400px;
+  background: linear-gradient(135deg, #f5f7ff 0%, #e6e9ff 100%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.story-image .image-placeholder i {
+  font-size: 100px;
+  color: var(--primary);
+  opacity: 0.7;
+}
+
+.story-content h2 {
+  font-size: 36px;
+  margin-bottom: 25px;
+  color: var(--dark);
+}
+
+.story-content p {
+  color: var(--gray);
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+/* About CTA Section */
+.about-cta {
+  padding: 100px 0;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: white;
+  text-align: center;
+}
+
+.about-cta h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-cta p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.9;
+}
+
+/* Subscription Forms - MOVED OUTSIDE MEDIA QUERY */
+.subscription-forms {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin-top: 3rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subscription-card {
+  background: white;
+  color: #3498db;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 1px solid #e1e5e9;
+}
+
+.subscription-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.email-input {
+  padding: 1.25rem 1.5rem;
+  border: 2px solid #e1e5e9;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 64px;
+  color: #333;
+}
+
+.email-input::placeholder {
+  color: #999;
+}
+
+.email-input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.subscription-form .btn-primary,
+.subscription-form .btn-secondary {
+  padding: 1.25rem 2rem;
+  font-size: 1.2rem;
+  min-height: 64px;
+  border-radius: 10px;
+  font-weight: 600;
+  border: 3px solid #3498db;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.subscription-form .btn-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.subscription-form .btn-primary:hover {
+  background: var(--secondary);
+  transform: translateY(-2px);
+}
+
+.subscription-form .btn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.subscription-form .btn-secondary:hover {
+  background: white;
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about-cta .btn-primary {
+  background-color: white;
+  color: var(--primary);
+}
+
+.about-cta .btn-secondary {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.about-cta .btn-secondary:hover {
+  background-color: white;
+  color: var(--primary);
+}
+
+/* Responsive Styles for About Page */
+@media (max-width: 992px) {
+  .mission-grid,
+  .story-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .mission-image .image-placeholder,
+  .story-image .image-placeholder {
+    height: 300px;
+  }
+  
+  .mission-stats {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero-content h1 {
+    font-size: 36px;
+  }
+  
+  .about-hero-content p {
+    font-size: 18px;
+  }
+  
+  .mission-content h2,
+  .story-content h2 {
+    font-size: 28px;
+  }
+  
+  .mission-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .stat-number {
+    font-size: 36px;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-buttons .btn-primary,
+  .cta-buttons .btn-secondary {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  /* Subscription Forms Mobile */
+  .subscription-forms {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .subscription-card {
+    padding: 2.5rem 2rem;
+  }
+  
+  .email-input {
+    padding: 1.125rem 1.25rem;
+    font-size: 1.1rem;
+    min-height: 58px;
+  }
+  
+  .subscription-form .btn-primary,
+  .subscription-form .btn-secondary {
+    padding: 1.125rem 1.5rem;
+    font-size: 1.1rem;
+    min-height: 58px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-hero {
+    padding: 80px 0 60px;
+  }
+  
+  .about-hero-content h1 {
+    font-size: 28px;
+  }
+  
+  .mission-section,
+  .values-section,
+  .team-section,
+  .story-section,
+  .about-cta {
+    padding: 60px 0;
+  }
+  
+  .mission-stats {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .values-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Additional mobile adjustments for subscription forms */
+  .subscription-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .email-input {
+    padding: 1rem 1.125rem;
+    font-size: 1rem;
+    min-height: 52px;
+  }
+  
+  .subscription-form .btn-primary,
+  .subscription-form .btn-secondary {
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    min-height: 52px;
+  }
+}
